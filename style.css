@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+/* LIGHT MODE */
+.light {
+    background-color: rgb(232, 232, 232);
+    color: black;
+    --color-button: black;
+
+}
+
+:root {
+    --color-button: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #242325;
+    color: white;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 500px;
+    padding: 20px;
+}
+
+#user-image img {
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.track {
+    position: relative;
+    width: 55px;
+    margin: 0 auto 15px auto;
+}
+
+.container-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.track button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: var(--color-button);
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
+
+.track button img {
+    display: block;
+    position: relative;
+    top: 0;
+    transform: translateX(-12%);
+    width: 15px;
+
+}
+
+.light .track button {
+    right: 0;
+}
+
+.track span {
+    display: block;
+    height: 18px;
+    width: 50px;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+}
+
+.box-link {
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    line-height: 30px;
+    background-color: gray;
+    opacity: .4;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.box-link:hover {
+    transition: all .3s;
+    opacity: 1;
+}
+
+.box-link a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px;
+    width: 200px;
+    height: 30px;
+}
+
+.icons a {
+    color: white;
+}
+
+.icons a img {
+    width: 25px;
+
+}
+
+footer {
+    text-align: center;
+    font-size: 10pt;
+}
+
+footer p a {
+    text-decoration: none;
+    color: gray;
+}
+
+footer p a:hover {
+    color: rgb(124, 51, 225);
+    text-decoration: underline;
+    transition: all .3s;
+    opacity: 1;
+}
